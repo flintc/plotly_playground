@@ -1,0 +1,166 @@
+continuous_error_bars:
+  data:
+    scatter:
+      - name: "mean"
+        mode: "lines"
+        line:
+          color: "rgb(231, 107, 243)"
+      - mode: "lines"
+        name: "upper bound"
+        showlegend: false
+        line:
+          color: "rgba(231,107,243,0.25)"
+      - mode: "lines"
+        line:
+          color: "rgba(231,107,243,0.25)"
+        name: "lower bound"
+        fill: "tonexty"
+        fillcolor: "rgba(231,107,243,0.2)"
+        showlegend: false
+  layout:
+    height: 800
+    xaxis:
+      title: "x"
+    yaxis:
+      title: "pred y"
+
+dark_layout:
+  annotationdefaults: { arrowcolor: "#f2f5fa", arrowhead: 0, arrowwidth: 1 }
+  colorscale:
+    diverging:
+      - [0, "#8e0152"]
+      - [0.1, "#c51b7d"]
+      - [0.2, "#de77ae"]
+      - [0.3, "#f1b6da"]
+      - [0.4, "#fde0ef"]
+      - [0.5, "#f7f7f7"]
+      - [0.6, "#e6f5d0"]
+      - [0.7, "#b8e186"]
+      - [0.8, "#7fbc41"]
+      - [0.9, "#4d9221"]
+      - [1, "#276419"]
+    sequential:
+      - [0.0, "#0508b8"]
+      - [0.0893854748603352, "#1910d8"]
+      - [0.1787709497206704, "#3c19f0"]
+      - [0.2681564245810056, "#6b1cfb"]
+      - [0.3575418994413408, "#981cfd"]
+      - [0.44692737430167595, "#bf1cfd"]
+      - [0.5363128491620112, "#dd2bfd"]
+      - [0.6256983240223464, "#f246fe"]
+      - [0.7150837988826816, "#fc67fd"]
+      - [0.8044692737430168, "#fe88fc"]
+      - [0.8938547486033519, "#fea5fd"]
+      - [0.9832402234636871, "#febefe"]
+      - [1.0, "#fec3fe"]
+    sequentialminus:
+      - [0.0, "#0508b8"]
+      - [0.0893854748603352, "#1910d8"]
+      - [0.1787709497206704, "#3c19f0"]
+      - [0.2681564245810056, "#6b1cfb"]
+      - [0.3575418994413408, "#981cfd"]
+      - [0.44692737430167595, "#bf1cfd"]
+      - [0.5363128491620112, "#dd2bfd"]
+      - [0.6256983240223464, "#f246fe"]
+      - [0.7150837988826816, "#fc67fd"]
+      - [0.8044692737430168, "#fe88fc"]
+      - [0.8938547486033519, "#fea5fd"]
+      - [0.9832402234636871, "#febefe"]
+      - [1.0, "#fec3fe"]
+  colorway:
+    [
+      "#636efa",
+      "#EF553B",
+      "#00cc96",
+      "#ab63fa",
+      "#19d3f3",
+      "#e763fa",
+      "#FECB52",
+      "#FFA15A",
+      "#FF6692",
+      "#B6E880",
+    ]
+  font:
+    color: "#f2f5fa"
+  geo:
+    bgcolor: "rgb(17,17,17)"
+    lakecolor: "rgb(17,17,17)"
+    landcolor: "rgb(17,17,17)"
+    showlakes: true,
+    showland: true,
+    subunitcolor: "#506784"
+  mapbox:
+    style: "dark"
+  paper_bgcolor: "rgb(17,17,17)"
+  plot_bgcolor: "rgb(17,17,17)"
+  polar:
+    angularaxis: { gridcolor: "#506784", linecolor: "#506784", ticks: "" }
+    bgcolor: "rgb(17,17,17)"
+    radialaxis: { gridcolor: "#506784", linecolor: "#506784", ticks: "" }
+  scene:
+    xaxis:
+      backgroundcolor: "rgb(17,17,17)"
+      gridcolor: "#506784"
+      gridwidth: 2
+      linecolor: "#506784"
+      showbackground: true,
+      ticks: ""
+      zerolinecolor: "#C8D4E3"
+    yaxis:
+      backgroundcolor: "rgb(17,17,17)"
+      gridcolor: "#506784"
+      gridwidth: 2
+      linecolor: "#506784"
+      showbackground: true,
+      ticks: ""
+      zerolinecolor: "#C8D4E3"
+    zaxis:
+      backgroundcolor: "rgb(17,17,17)"
+      gridcolor: "#506784"
+      gridwidth: 2
+      linecolor: "#506784"
+      showbackground: true
+      ticks: ""
+      zerolinecolor: "#C8D4E3"
+  shapedefaults:
+    fillcolor: "#f2f5fa"
+    line: { width: 0 }
+    opacity: 0.4
+  sliderdefaults:
+    bgcolor: "#C8D4E3"
+    bordercolor: "rgb(17,17,17)"
+    borderwidth: 1
+    tickwidth: 0
+  ternary:
+    aaxis:
+      gridcolor: "#506784"
+      linecolor: "#506784"
+      ticks: ""
+    baxis:
+      gridcolor: "#506784"
+      linecolor: "#506784"
+      ticks: ""
+    bgcolor: rgb(17,17,17)
+    caxis:
+      gridcolor: "#506784"
+      linecolor: "#506784"
+      ticks: ""
+  title:
+    x: 0.05
+  updatemenudefaults:
+    bgcolor: "#506784"
+    borderwidth: 0
+  xaxis:
+    automargin: true,
+    gridcolor: "#283442"
+    linecolor: "#506784"
+    ticks: ""
+    zerolinecolor: "#283442"
+    zerolinewidth: 2
+  yaxis:
+    automargin: true
+    gridcolor: "#283442"
+    linecolor: "#506784"
+    ticks: ""
+    zerolinecolor: "#283442"
+    zerolinewidth: 2

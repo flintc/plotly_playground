@@ -1,0 +1,21 @@
+version: "2"
+services:
+  base:
+    build: .
+    volumes:
+      - notebooks:/home/jovyan/notebooks
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN}
+  notebooks:
+    extends: base
+    ports:
+      - "8870:8888"
+    entrypoint: ["jupyter", "notebook"]
+  lab:
+    extends: base
+    ports:
+      - "8872:8888"
+    entrypoint: ["jupyter", "lab"]
+
+volumes:
+  notebooks:
