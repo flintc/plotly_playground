@@ -1,0 +1,17 @@
+layout:
+  images: 
+    - source: data:image/png;base64,{{img}}
+      name: background
+      sizex: {{sz[0]-1}}
+      sizey: {{sz[1]-1}}
+      xref: x
+      yref: y
+      x: 0
+      y: 0
+      layer: below
+      sizing: stretch
+  xaxis: 
+      range: {{[0, sz[0]]}}
+  yaxis: 
+      range: {{[sz[1], 0]}}
+

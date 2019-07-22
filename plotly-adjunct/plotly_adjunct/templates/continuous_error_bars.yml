@@ -1,0 +1,23 @@
+data:
+  scatter:
+    - name: "mean"
+      mode: "lines"
+      line:
+        color: "rgb{{color.red, color.green, color.blue}}"
+    - mode: "lines"
+      name: "upper bound"
+      showlegend: false
+      line:
+        color: "rgba{{color.red, color.green, color.blue, 0.25}}"
+    - mode: "lines"
+      name: "lower bound"
+      fill: "tonexty"
+      showlegend: false
+      line:
+        color: "rgba{{color.red, color.green, color.blue, 0.25}}"
+      fillcolor: "rgba{{color.red, color.green, color.blue, 0.2}}"
+layout:
+  xaxis:
+    title: "x"
+  yaxis:
+    title: "pred y"

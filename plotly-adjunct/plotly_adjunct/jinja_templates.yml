@@ -1,0 +1,56 @@
+continuous_error_bars:
+  data:
+    scatter:
+      - name: "mean"
+        mode: "lines"
+        line:
+          color: rgb{{color.red, color.green, color.blue}}
+      - mode: "lines"
+        name: "upper bound"
+        showlegend: false
+        line:
+          color: rgba{{color.red, color.green, color.blue, 0.25}}
+      - mode: "lines"
+        name: "lower bound"
+        fill: "tonexty"
+        showlegend: false
+        line:
+          color: rgba{{color.red, color.green, color.blue, 0.25}}
+          fillcolor: rgba{{color.red, color.green, color.blue, 0.2}}
+  layout:
+    xaxis:
+      title: "x"
+    yaxis:
+      title: "pred y"
+
+colors:
+  data:
+    scatter:
+      - line:
+          color: rgb{{color.red, color.green, color.blue}}
+      - line:
+          color: rgba{{color.red, color.green, color.blue, 0.25}}
+      - line:
+          color: rgba{{color.red, color.green, color.blue, 0.25}}
+          fillcolor: rgba{{color.red, color.green, color.blue, 0.2}}
+
+images:
+  layout:
+    images:
+      - name: background
+        xref: x
+        yref: y
+        x: 0
+        y: 0
+        layer: below
+        sizing: stretch
+      - name: watermark
+        xref: paper
+        yref: paper
+        x: 0.75
+        y: 0.3
+        sizex: 0.25
+        sizey: 0.25
+        sizing: stretch
+        opacity: 1
+        layer: below
